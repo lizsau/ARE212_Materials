@@ -55,6 +55,7 @@ class ConvolvedContinuousAndDiscrete(iid.rv_continuous):
         for k in range(len(s.xk)):
             F = F + x.cdf(z-s.xk[k])*s.pk[k]
         return F
+    
 
     def _pdf(self,z):
         f=0
